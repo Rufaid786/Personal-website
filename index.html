@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rufaid P</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="data:image/jpeg;base64,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" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.7.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+  
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Rufaid P</h1>
+      <p>I'm <span class="typed" data-typed-items="Mechanical Engineer, Front-end Developer"></span></p>
+      <div class="social-links">
+        <a href="https://twitter.com/DiafurP" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/rufaidmon.p/"  target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/rufaidpdiafur/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rufaid-p-8100021bb/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>A passionate human being who seeks new challenges in daily life.Pursuing Bachelor of Technology in Mechanical Engineering.Interested in learning new technologies.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h2 class="fs-2" style="color:#0563bb">Mechanical Engineer &amp; Front-end Developer </h2>
+            <div class="row">
+              <div class="col-lg-6">
+                
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>RUFAID P</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>03 Nov 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Malappuram,INDIA</span></li>
+                  
+
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Specialistaion:</strong> <span>Mechanical Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rufaidp5@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+919656375997</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              A Mechanical Engineer who got much interested in IT field during the lockdown days.Loves to learn new technologies and implement it in a project.An enthusiastic human being who is willing to work time bound until the project is complete.More interested in the front end development part.
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Learned to code myself.More interested in front end development part.Leraned HTML,CSS and some basic javascript concepts.Know the basics of python and C++.Highly skilled in leadership and communication by organizing various events in college.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Leadership <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++ <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Communication <i class="val">87%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Decision Making <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Rufaid P</h4>
+              <p><em>A Mechanical Engineering student who is interested in IT field.Highly skilled in leadership and cmmunication.Concentrated more on front end development part.</em></p>
+              <ul>
+                <li>Malappuram,Kerala,India </li>
+                <li>+91 9656375997</li>
+                <li>rufaidp5@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Mechanical Engineering</h4>
+              <h5>2018 - 2022</h5>
+              <p><em>College of Engineering, Trivandrum ,Kerala</em></p>
+              <p>A four year Bachelor's Degree course affiliated to APJ Abdul Kalam technological University.Secured 8.93/10 cgpa(upto S6). </p>
+            </div>
+            <div class="resume-item">
+              <h4>Higher Secondary Education</h4>
+              <h5>2015 - 2017</h5>
+              <p><em>HMY Higher Secondary School</em></p>
+              <p>Studied Computer Science,Maths,Physics,Chemistry under Kerala State Board.Secured 1130/1200.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Secondary School Education</h4>
+              <h5>2014 - 2015</h5>
+              <p><em>MSP EMHS Malappuram</em></p>
+              <p>Studied Maths,Physics,Chemistry,Biology under Kerala State Board.Secured full A+.</p>
+            </div>
+
+            <h3 class="resume-title">Awards and Acievements</h3>
+            <div class="resume-item">
+              <h4>Maths Project winner</h4>
+              <ul>
+                <li>Second prize in Sub-District Maths Project and Participated in District Maths fair in 2015.</li>
+                <li>Second prize in Sub-District Maths Group Project and Participated in District Maths fair in 2017.</li>
+                <li>Second prize in Sub-District Maths Project in 2014.</li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Extra Curricular Activities</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Helping Hands Organisation</li>
+                <li>NSS</li>
+                <li>Volunteered in Drishti 2018 Mechanical contraption</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Training Programs</h3>
+            <div class="resume-item">
+              <h4>Programming for Everybody (Getting Started With Python)</h4>
+              <h5>September 2020-october 2020</h5>
+              <p><em>University of Michigan</em></p>
+              <p>An online non-credit course authorized by University of Michigan and offered through Coursera.Learned the basic syntax of Python language.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Python Data Structures</h4>
+              <h5>Nov 2020-Dec 2020 </h5>
+              <p><em>University of Michigan</em></p>
+              <p>An online non-credit course authorized by University of Michigan and offered through Coursera.Learned the basic data structures like list,tuple,dictionaries and looping statements.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Mechanical Engineering Expert</h4>
+              <h5> April 2021-May 2021 </h5>
+              <p><em>Chegg India</em></p>
+              <p>Helped many students in their academics.</p>
+            </div>
+            <h3 class="resume-title">Positions of Responsibility</h3>
+            <div class="resume-item">
+              <h4>Fund raising Program Head</h4>
+              <h5> Jan 2019-Present </h5>
+              <p><em>Helping Hands Organisation</em></p>
+              <p>Lead the team in collecting funds.The session is actually called as Chirag.As a chirag head,responsibility is to lead and direct your team in collecting donations and give the team the necessary directions while interacting with people.
+
+              </p>
+            </div>
+            
+            <h3 class="resume-title">Hobbies and Interests.</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Playing</li>
+                <li>Browsing</li>
+                <li>Watching Football Matches</li>
+              </ul>
+            </div>
+            <h3 class="resume-title">Languages Known</h3>
+            <div class="resume-item">
+              <ul>
+                <li>English</li>
+                <li>Malayalam(Mother Tongue)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <a target="_blank" href="https://drive.google.com/file/d/1oAsnBbbzCWlav0TF2Yu-GhY2CqezRCOj/view?usp=sharing" class="btn-section" >
+              <button class=" view-btn">
+                <i class="fa-solid fa-eye view-icon"></i>
+                <span class="">View Resume</span>
+              </button>
+            </a> 
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                </svg>
+                <i class="bi bi-globe"></i>
+              </div>
+              <h4>Optimization of Thermo Electric Generator in Waste heat Recovery</h4>
+              <p>Main aim is to analyse and optimize the performance of TEG in recovering Waste heat.Also experimentally analze the power output of TEG under various operating conditions.</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                </svg>
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h4>Energy Generation from Footsteps</h4>
+              <p class="mb-2"><em>Design Project</em></p>
+              <p>The project points out crucial data and facts showing that footsteps is a non-negligible source for 
+                the production of clean and renewable energy and furthermore ,using piezoelectric material for 
+                the same ensure that comfort is not compromised while carrying out the process.
+                </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bi bi-calculator"></i>
+              </div>
+              <h4>Calculator</h4>
+              <p class="mb-2"><em>Personal Project</em></p>
+              <p>Developed a simple calculator to do the basic mathematical operations using HTML, CSS and 
+                JavaScript
+                </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+            
+
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Rufaid P</h3>
+      <div class="social-links">
+        <a href="https://twitter.com/DiafurP" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/rufaidmon.p/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/rufaidpdiafur/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href=" https://www.linkedin.com/in/rufaid-p-8100021bb/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>rufaid.qtym.com</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
